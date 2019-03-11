@@ -4,11 +4,11 @@ def main():
 
     data = f.read()
 
+    print('close()する前', f.closed)
+
     f.close()
 
-    print(data)
-
-    print(type(f))
+    print('close()した後', f.closed)
 
 if __name__ == '__main__':
     main()
